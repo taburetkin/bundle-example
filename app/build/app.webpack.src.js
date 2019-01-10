@@ -86,6 +86,42 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/some-lib/src/bar-module/bar-alpha.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/some-lib/src/bar-module/bar-alpha.js ***!
+  \***********************************************************/
+/*! exports provided: barAlpha */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"barAlpha\", function() { return barAlpha; });\n/* harmony import */ var _foo_module_foo_beta_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../foo-module/foo-beta.js */ \"./node_modules/some-lib/src/foo-module/foo-beta.js\");\n\r\nfunction barAlpha() {\r\n\tconsole.log('barAlpha');\r\n\tconsole.log('fooBeta is ', typeof _foo_module_foo_beta_js__WEBPACK_IMPORTED_MODULE_0__[\"fooBeta\"]);\r\n}\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/bar-module/bar-alpha.js?");
+
+/***/ }),
+
+/***/ "./node_modules/some-lib/src/bar-module/bar-beta.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/some-lib/src/bar-module/bar-beta.js ***!
+  \**********************************************************/
+/*! exports provided: barBeta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"barBeta\", function() { return barBeta; });\n/* harmony import */ var _bar_alpha_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bar-alpha.js */ \"./node_modules/some-lib/src/bar-module/bar-alpha.js\");\n\r\nfunction barBeta() {\r\n\tconsole.log('barBeta');\r\n\tconsole.log('barAlpha is ', typeof _bar_alpha_js__WEBPACK_IMPORTED_MODULE_0__[\"barAlpha\"]);\r\n}\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/bar-module/bar-beta.js?");
+
+/***/ }),
+
+/***/ "./node_modules/some-lib/src/bar-module/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/some-lib/src/bar-module/index.js ***!
+  \*******************************************************/
+/*! exports provided: barAlpha, barBeta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bar_alpha_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bar-alpha.js */ \"./node_modules/some-lib/src/bar-module/bar-alpha.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"barAlpha\", function() { return _bar_alpha_js__WEBPACK_IMPORTED_MODULE_0__[\"barAlpha\"]; });\n\n/* harmony import */ var _bar_beta_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bar-beta.js */ \"./node_modules/some-lib/src/bar-module/bar-beta.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"barBeta\", function() { return _bar_beta_js__WEBPACK_IMPORTED_MODULE_1__[\"barBeta\"]; });\n\n\r\n\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/bar-module/index.js?");
+
+/***/ }),
+
 /***/ "./node_modules/some-lib/src/foo-module/foo-alpha.js":
 /*!***********************************************************!*\
   !*** ./node_modules/some-lib/src/foo-module/foo-alpha.js ***!
@@ -95,6 +131,30 @@
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fooAlpha\", function() { return fooAlpha; });\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers */ \"./node_modules/some-lib/src/helpers.js\");\n\r\nfunction fooAlpha() {\r\n\r\n\tObject(_helpers__WEBPACK_IMPORTED_MODULE_0__[\"someHelper\"])();\r\n\tconsole.log('fooAlpha');\r\n\t\r\n}\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/foo-module/foo-alpha.js?");
+
+/***/ }),
+
+/***/ "./node_modules/some-lib/src/foo-module/foo-beta.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/some-lib/src/foo-module/foo-beta.js ***!
+  \**********************************************************/
+/*! exports provided: fooBeta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fooBeta\", function() { return fooBeta; });\n/* harmony import */ var _bar_module_bar_beta_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../bar-module/bar-beta.js */ \"./node_modules/some-lib/src/bar-module/bar-beta.js\");\n\r\nfunction fooBeta() {\r\n\tconsole.log('fooBeta');\r\n\tconsole.log('barBeta is ', typeof _bar_module_bar_beta_js__WEBPACK_IMPORTED_MODULE_0__[\"barBeta\"]);\r\n}\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/foo-module/foo-beta.js?");
+
+/***/ }),
+
+/***/ "./node_modules/some-lib/src/foo-module/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/some-lib/src/foo-module/index.js ***!
+  \*******************************************************/
+/*! exports provided: fooAlpha, fooBeta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _foo_alpha_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./foo-alpha.js */ \"./node_modules/some-lib/src/foo-module/foo-alpha.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"fooAlpha\", function() { return _foo_alpha_js__WEBPACK_IMPORTED_MODULE_0__[\"fooAlpha\"]; });\n\n/* harmony import */ var _foo_beta_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foo-beta.js */ \"./node_modules/some-lib/src/foo-module/foo-beta.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"fooBeta\", function() { return _foo_beta_js__WEBPACK_IMPORTED_MODULE_1__[\"fooBeta\"]; });\n\n\r\n\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/foo-module/index.js?");
 
 /***/ }),
 
@@ -110,6 +170,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./node_modules/some-lib/src/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/some-lib/src/index.js ***!
+  \********************************************/
+/*! exports provided: foo, bar, default, barAlpha, barBeta, fooAlpha, fooBeta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bar_module_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bar-module/index.js */ \"./node_modules/some-lib/src/bar-module/index.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"barAlpha\", function() { return _bar_module_index_js__WEBPACK_IMPORTED_MODULE_0__[\"barAlpha\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"barBeta\", function() { return _bar_module_index_js__WEBPACK_IMPORTED_MODULE_0__[\"barBeta\"]; });\n\n/* harmony import */ var _foo_module_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foo-module/index.js */ \"./node_modules/some-lib/src/foo-module/index.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"fooAlpha\", function() { return _foo_module_index_js__WEBPACK_IMPORTED_MODULE_1__[\"fooAlpha\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"fooBeta\", function() { return _foo_module_index_js__WEBPACK_IMPORTED_MODULE_1__[\"fooBeta\"]; });\n\n/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, \"bar\", function() { return _bar_module_index_js__WEBPACK_IMPORTED_MODULE_0__; });\n/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, \"foo\", function() { return _foo_module_index_js__WEBPACK_IMPORTED_MODULE_1__; });\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst SomeLib = {\r\n\tVERSION: \"1.0.0\",\r\n\tfoo: _foo_module_index_js__WEBPACK_IMPORTED_MODULE_1__,\r\n\tbar: _bar_module_index_js__WEBPACK_IMPORTED_MODULE_0__\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (SomeLib);\r\n\n\n//# sourceURL=webpack:///./node_modules/some-lib/src/index.js?");
+
+/***/ }),
+
 /***/ "./src/src-index.js":
 /*!**************************!*\
   !*** ./src/src-index.js ***!
@@ -118,7 +190,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var some_lib_src_foo_module_foo_alpha__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! some-lib/src/foo-module/foo-alpha */ \"./node_modules/some-lib/src/foo-module/foo-alpha.js\");\n// you can try to change import path to 'some-lib/src/foo-module'\r\n// rollup bundle will still contain only fooAlpha method while webpack's one will hold all exports from foo-module\r\n\r\n\r\nconsole.log('method: ', some_lib_src_foo_module_foo_alpha__WEBPACK_IMPORTED_MODULE_0__[\"fooAlpha\"]);\r\n\n\n//# sourceURL=webpack:///./src/src-index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var some_lib_src__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! some-lib/src */ \"./node_modules/some-lib/src/index.js\");\n// you can try to change import path to 'some-lib/src/foo-module'\r\n// rollup bundle will still contain only fooAlpha method while webpack's one will hold all exports from foo-module\r\n\r\n\r\nconsole.log('method: ', some_lib_src__WEBPACK_IMPORTED_MODULE_0__[\"fooAlpha\"]);\r\n\n\n//# sourceURL=webpack:///./src/src-index.js?");
 
 /***/ })
 
