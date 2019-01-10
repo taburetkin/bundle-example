@@ -38,11 +38,4 @@ var foo = /*#__PURE__*/Object.freeze({
 	fooBeta: fooBeta
 });
 
-const SomeLib = {
-	VERSION: "1.0.0",
-	foo,
-	bar
-};
-
-export default SomeLib;
-export { foo, bar, barAlpha, barBeta, fooAlpha, fooBeta };
+console.log('method: ', fooAlpha);

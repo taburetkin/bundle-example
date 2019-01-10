@@ -1,8 +1,8 @@
 const resolve = require('rollup-plugin-node-resolve');
 module.exports = {
-	input: 'src/index.js',
+	input: 'src/src-index.js',
 	output: {
-		file: 'build/app.rollup.js',
+		file: 'build/app.rollup.src.js',
 		format: 'esm'
 	},
 	plugins:[

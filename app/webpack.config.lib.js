@@ -9,10 +9,10 @@ module.exports = {
 		'backbone.radio': 'Radio'
 	},
 	entry: {
-		app: './src/index.js'
+		app: './src/lib-index.js'
 	},
 	output: {
 		path: path.resolve('./build'),
-		filename: 'app.webpack.js'
+		filename: 'app.webpack.lib.js'
 	},
 }

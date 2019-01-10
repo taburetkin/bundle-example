@@ -5,7 +5,13 @@
 	"author": "dimtabu",
 	"license": "MIT",
 	"scripts": {
-		"rollup": "rollup -c"
+		"rollup-lib": "rollup -c rollup.config.lib.js",
+		"rollup-src": "rollup -c rollup.config.src.js",
+		"rollup": "npm run rollup-lib & npm run rollup-src",
+		"webpack-lib": "webpack --config webpack.config.lib.js",
+		"webpack-src": "webpack --config webpack.config.src.js",
+		"webpack": "npm run webpack-lib & npm run webpack-src",
+		"start": "npm run webpack & npm run rollup"
 	},
 	"devDependencies": {
 		"rollup": "^1.1.0",
