@@ -1,0 +1,14 @@
+{
+  "name": "some-lib",
+  "version": "1.0.0",
+  "description": "test external lib",
+  "main": "lib/some-lib.esm.js",  
+  "author": "dimtabu",
+  "license": "MIT",
+  "scripts":{
+	  "lib": "rollup src/index.js --file lib/some-lib.esm.js --format esm"
+  },
+  "devDependencies": {
+    "rollup": "^1.1.0"
+  }
+}
